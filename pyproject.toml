@@ -1,0 +1,19 @@
+[project]
+name = "alexjser-mcp-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "chvjs", email = "tancawe@foxmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "mcp[cli]>=1.26.0",
+]
+
+[project.scripts]
+alexjser-mcp-demo = "alexjser_mcp_demo:main"
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
